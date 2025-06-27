@@ -1,5 +1,4 @@
-// Jeito mais longo (Treinar)
-const diaAtual = new Date();
+let diaAtual = new Date();
 const diaSemanaNum = diaAtual.getDay();
 const mesNum = diaAtual.getMonth();
 console.log(mesNum);
@@ -46,10 +45,17 @@ function defMes (mesNum) {
             return "Inválido";
     }
 }
+function chamar (diaSemanaNum, diaAtual, mesNum) {
+    defDiaSemana(diaSemanaNum);
+    let resultado = document.querySelector("h1");
 
-defDiaSemana(diaSemanaNum);
+    resultado.innerHTML = (`${defDiaSemana(diaSemanaNum)}, ${diaAtual.getDate()} de ${defMes(mesNum)} de ${diaAtual.getFullYear()}
+    <h3>${diaAtual.getHours()}:${diaAtual.getMinutes()}:${diaAtual.getSeconds()}</h3>`)
+}
 
-let resultado = document.querySelector("h1");
 
-resultado.innerHTML += (`${defDiaSemana(diaSemanaNum)}, ${diaAtual.getDate()} de ${defMes(mesNum)} de ${diaAtual.getFullYear()}
-<h3>${diaAtual.getHours()}:${diaAtual.getMinutes()}</h3>`)
+setInterval(() => {
+    diaAtual = new Date();
+    chamar(diaSemanaNum, diaAtual, mesNum)}
+    , 1000);
+
