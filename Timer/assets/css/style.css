@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+:root{
+    --primary-color: rgb(102, 51, 153);
+    --primary-color-darker: rgb(65, 20, 110);
+    --primary-color-darker2: rgb(41, 10, 72);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.container h1{
+    font-size: 50px;
+}
+.relogio {
+    font-size: 80px;
+}
+.container button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--primary-color);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    margin-top: 10px;
+}
+.container button:hover {
+    background-color: var(--primary-color-darker);
+}
+.container button:active {
+    background-color: var(--primary-color-darker2);
+}
+.marcacoes {
+    font-size: 35px;
+    
+}
