@@ -1,0 +1,53 @@
+:root{
+    --primary-color: rgb(102, 51, 153);
+    --primary-color-darker: rgb(41, 10, 72);
+    --primary-color-darker2: rgb(41, 10, 72);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+.container .add-tarefa {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+.container button:hover {
+    background-color: var(--primary-color-darker2);
+}
+.input-tarefas {
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.tarefas {
+    list-style: none;    
+}
+.apagar {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
