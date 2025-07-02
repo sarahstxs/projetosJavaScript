@@ -15,3 +15,4 @@ let desculpas = [
 gerar.addEventListener("click", function () {
     desculpa.innerHTML = `"${desculpas[Math.floor(Math.random() * desculpas.length)]}"`
 })
+// Adicionar a possibilidade de vc add. as suas desculpas (:
