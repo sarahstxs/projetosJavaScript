@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+:root{
+    --primary-color: rgb(102, 51, 153);
+    --primary-color-darker: rgb(69, 15, 122);
+    --primary-color-darker-more: rgb(41, 10, 72);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 20px;
+    justify-items: center;
+}
+.calculadora {
+    width: 650px;
+}
+.display {
+    font-size: 2em;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: var(--primary-color);
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--primary-color-darker);
+}
+.btn:active {
+    background-color: var(--primary-color-darker-more);
+}
+.btn-eq {
+    background-color: rgb(193, 151, 235);
+}
+.btn-eq:hover {
+    background-color: rgb(136, 88, 184);
+}
+.btn-eq:active {
+    background-color: rgb(89, 49, 129);
+}
